@@ -1,0 +1,133 @@
+body {
+    font-family: 'Inter', sans-serif;
+    width: 320px;
+    margin: 0;
+    padding: 16px;
+    background-color: #f7f8fa;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.url-display-wrapper {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.url-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #718096;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.url-display {
+    font-size: 13px;
+    word-wrap: break-word;
+    margin: 0;
+    color: #2d3748;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(180deg, #4c51bf, #434190);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn:disabled {
+    background: #a0aec0;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.result-container {
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    box-sizing: border-box;
+    display: none; /* Hidden by default */
+}
+
+/* Specific styles for different results */
+.result-legitimate {
+    background-color: #c6f6d5;
+    color: #2f855a;
+    border: 1px solid #9ae6b4;
+    display: block;
+}
+
+.result-phishing {
+    background-color: #fed7d7;
+    color: #c53030;
+    border: 1px solid #feb2b2;
+    display: block;
+}
+
+.result-checking {
+    background-color: #bee3f8;
+    color: #2b6cb0;
+    border: 1px solid #90cdf4;
+    display: block;
+}
+
+.result-error {
+    background-color: #fff5f5;
+    color: #c53030;
+    border: 1px solid #fc8181;
+    display: block;
+    font-size: 14px;
+}
